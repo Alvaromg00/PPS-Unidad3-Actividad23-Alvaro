@@ -69,4 +69,21 @@ Nos habla sobre el problema introducido por el uso de **eval()**.
 
 ### Crear reglas personalizadas
 
+Podemos crear nuestro propio archivo de reglas para realizar un análisis estático con semgrep:
+
+![alt](Imagenes/11.png)
+
+Y lanzamos el análisis estático sobre nuestro repositorio de **semgrep-prueba**:
+
+![alt](Imagenes/12.png)
+
+Como vemos nos aparece el aviso indicado en la regla:
+
+![alt](Imagenes/13.png)
+
+Modificamos la ejecución de semgrep, en vez de ejecutar con las reglas por defecto, lo hacemos con las reglas personalizadas.
+
+Para ello tenemos que indicarle que el conjunto de reglas a aplicar es el que hemos creado
+
+![alt](Imagenes/14.png)
 
