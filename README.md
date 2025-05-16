@@ -19,10 +19,18 @@ Semgrep (Security Enhanced Multi-Grep) es una herramienta de análisis estático
 - Usar SAST para detectar problemas de seguridad en el código sin ejecutarlo.
 - Conocer los qué es un entorno CI/CD: Integración Continua/Entrega Continua
 
+### Análisis automático del código:
+
+Lanzamos el análisis automático con **semgrep**:
+
 ![alt](Imagenes/1.png)
 
+Nos indica que ha encontrado 188 problemas:
 
 ![alt](Imagenes/2.png)
 
+Ahora lanzamos el análisis vulnerabilidades basadas en las 10 amenazas más críticas de OWASP:
 
 ![alt](Imagenes/3.png)
+
+![alt](Imagenes/4.png)
