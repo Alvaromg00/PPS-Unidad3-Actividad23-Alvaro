@@ -81,9 +81,14 @@ Como vemos nos aparece el aviso indicado en la regla:
 
 ![alt](Imagenes/13.png)
 
+### Integración de reglas personalizadas con Github CI/CD
+
 Modificamos la ejecución de semgrep, en vez de ejecutar con las reglas por defecto, lo hacemos con las reglas personalizadas.
 
 Para ello tenemos que indicarle que el conjunto de reglas a aplicar es el que hemos creado
 
 ![alt](Imagenes/14.png)
 
+Y al hacer push podemos ver que se ejecuta el workflow:
+
+![alt](Imagenes/15.png)
