@@ -33,4 +33,40 @@ Ahora lanzamos el análisis vulnerabilidades basadas en las 10 amenazas más cr�
 
 ![alt](Imagenes/3.png)
 
+Indica que ha encontrado 44 problemas, aqui hay alguno de ellos:
+
 ![alt](Imagenes/4.png)
+
+### Integración de Semgrep en GitHub Actions
+
+Creamos un repositorio llamado **semgrep-prueba**:
+
+![alt](Imagenes/5.png)
+
+Lo clonamos y dentro creamos la siguiente estructura de ficheros y directorios:
+
+![alt](Imagenes/6.png)
+
+Ponemos el siguiente código en **main.py**:
+
+![alt](Imagenes/7.png)
+
+Y en **semgrep.yml**:
+
+![alt](Imagenes/8.png)
+
+Esto hace que se ejecute Semgrep en cada push y pull request.
+
+Hacemos un commit y push para probar y en Github nos vamos a el apartado de actions para ver el pipeline en ejecución:
+
+![alt](Imagenes/9.png)
+
+Una vez completado nos podemos descargar el json y consultarlo:
+
+![alt](Imagenes/10.png)
+
+Nos habla sobre el problema introducido por el uso de **eval()**.
+
+### Crear reglas personalizadas
+
+
